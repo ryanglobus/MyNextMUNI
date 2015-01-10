@@ -1,0 +1,117 @@
+.navbar-header .navbar-right {
+    float: right;
+    padding: 15px;
+    padding-bottom: 0px;
+}
+
+.navbar-link {
+    padding: 0px 5px;
+}
+
+form.form-group {
+    margin: 5px 0px;
+    padding: 15px;
+    border: 3px solid black;
+    border-radius: 8px;
+    box-shadow: 0 0 1em #888 inset;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+#predictions {
+    padding: 5px;
+}
+
+#predictions li {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#predictions span {
+    padding: 10px;
+}
+
+#predictions .well {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.delete-button {
+    color: red;
+    font-size: 2.0em;
+    margin-top: 26px; /* TODO hacky */
+    float: left;
+    cursor: pointer;
+    display: none;
+}
+
+[data-role=predictions] {
+    font-size: 1.1em;
+    font-weight: bold;
+
+}
+
+input, select {
+    margin: 10px 0px;
+}
+
+form button {
+    min-width: 50%;
+}
+
+.template {
+    display: none;
+}
+
+.no-padding {
+    padding: 0px !important;
+}
+
+#refresh-spinner {
+    -webkit-animation: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: refresh;
+    -webkit-animation-play-state: paused;
+
+    animation: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: refresh;
+    animation-play-state: paused;
+}
+
+@-webkit-keyframes refresh {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(180deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes refresh {
+  0% { color: red; }
+  50% { color: green; }
+  100% { color: blue; }
+}
+
+#loading {
+    /*display: block;*/
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.5);
+    /*background-image: url("http://i.stack.imgur.com/MnyxU.gif");*/
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+
